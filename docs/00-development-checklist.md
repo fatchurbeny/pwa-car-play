@@ -60,7 +60,7 @@ Legenda: `[x]` selesai · `[ ]` belum dikerjakan · `[-]` diblokir/menunggu kepu
 
 ### Deployment dan uji lapangan
 
-- [ ] Hubungkan proyek ke Vercel
+- [x] Hubungkan proyek ke Vercel
 - [ ] Konfigurasi environment variables Vercel
 - [ ] Uji preview deployment dan Geolocation pada iPhone
 - [ ] Uji langsung di mobil: akurasi GPS, delay, sinyal, battery drain
