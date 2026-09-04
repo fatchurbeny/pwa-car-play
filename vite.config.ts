@@ -1,16 +1,19 @@
-import { readFileSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 import tailwindcss from '@tailwindcss/vite'
 
+const certificate = new URL('./.certs/local.pem', import.meta.url)
+const key = new URL('./.certs/local-key.pem', import.meta.url)
+const https = existsSync(certificate) && existsSync(key)
+  ? { cert: readFileSync(certificate), key: readFileSync(key) }
+  : undefined
+
 export default defineConfig({
   server: {
     host: true,
-    https: {
-      cert: readFileSync(new URL('./.certs/local.pem', import.meta.url)),
-      key: readFileSync(new URL('./.certs/local-key.pem', import.meta.url)),
-    },
+    https,
   },
   plugins: [
     tailwindcss(),
