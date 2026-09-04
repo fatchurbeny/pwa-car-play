@@ -39,7 +39,7 @@ Legenda: `[x]` selesai · `[ ]` belum dikerjakan · `[-]` diblokir/menunggu kepu
 - [x] Daftar dan simpan API key OpenRouteService
 - [x] Setup HTTPS development lokal dengan mkcert
 - [x] Uji akses HTTPS dari iPhone melalui Wi-Fi yang sama
-- [ ] Tambahkan MapLibre GL JS
+- [x] Tambahkan MapLibre GL JS
 - [ ] Buat service ORS dengan error handling dan pembatasan request
 
 ### Peta, posisi, dan izin
