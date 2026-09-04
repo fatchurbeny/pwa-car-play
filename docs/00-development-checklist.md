@@ -44,8 +44,8 @@ Legenda: `[x]` selesai · `[ ]` belum dikerjakan · `[-]` diblokir/menunggu kepu
 
 ### Peta, posisi, dan izin
 
-- [ ] Render peta dark dan center ke posisi awal user
-- [ ] Implementasi `watchPosition` untuk GPS real-time
+- [x] Render peta dark dan center ke posisi awal user
+- [x] Implementasi `watchPosition` untuk GPS real-time
 - [ ] Tampilkan marker kendaraan dan rotasi heading
 - [ ] Tampilkan status izin lokasi: pending, granted, denied
 
